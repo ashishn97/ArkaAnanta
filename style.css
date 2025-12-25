@@ -52,12 +52,15 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px var(--shadow-dark), -2px -2px 4px var(--shadow-light);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10%;
 }
 
 .nav-links {
@@ -131,7 +134,7 @@ body {
     margin-top: var(--nav-height);
     position: relative;
     overflow: hidden;
-    background-image: url('assets/aboutUs.jpg');
+    background-image: url('assets/bg1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -406,14 +409,67 @@ body {
     border-radius: 50%;
 }
 
-/* Contact Form */
-.contact-form {
+/* Contact Form & Details */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.contact-form, .contact-details {
+    flex: 1;
+    min-width: 300px;
     max-width: 600px;
-    margin: 0 auto;
     background-color: var(--bg-color);
     padding: 40px;
     border-radius: 20px;
     box-shadow: var(--outset-shadow);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form, .contact-details {
+        padding: 40px 10px;
+    }
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.detail-item:hover {
+    box-shadow: var(--inset-shadow-light);
+}
+
+.detail-item i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: var(--outset-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-item h4 {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+.detail-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .form-group {
