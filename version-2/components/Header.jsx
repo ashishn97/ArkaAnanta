@@ -1,6 +1,7 @@
 import React from 'react';
 import { Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo-v2.png';
 
 const Header = () => {
   return (
@@ -14,11 +15,12 @@ const Header = () => {
         >
           <div className="relative h-10 w-10 mr-2 bg-white rounded-lg p-0.5 overflow-hidden shadow-[0_0_15px_rgba(255,255,255,0.1)]">
             <img
-              src="/assets/logo.jpg"
+              src={logo}
               alt="Arka Ananta Logo"
               className="h-full w-full object-contain"
             />
           </div>
+
           <span className="font-bold text-lg tracking-widest text-white hidden sm:block group-hover:text-[#f4f4f4] transition-colors">
             ARKA ANANTA
           </span>

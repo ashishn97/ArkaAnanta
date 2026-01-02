@@ -8,7 +8,7 @@ const Team = () => {
   return (
     <section id="team" className="py-24 px-6 bg-[#0A0A0A]">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Section Header */}
         <div className="mb-16 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 text-glow">
@@ -31,8 +31,7 @@ const Team = () => {
 
                 {/* Profile Image */}
                 <div className="mb-6 relative">
-                  
-                  {/* Glow BEHIND image (same shape) */}
+                  {/* Glow behind image */}
                   <div
                     className="absolute top-1/2 left-1/2 w-20 h-20 
                                -translate-x-1/2 -translate-y-1/2
@@ -64,14 +63,14 @@ const Team = () => {
                   {member.role}
                 </p>
 
-                {/* LinkedIn Icon */}
+                {/* LinkedIn */}
                 <div className="mt-auto pb-4">
                   <motion.a
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full flex items-center justify-center 
-                               border border-white/10 text-white/40 
+                    className="w-10 h-10 rounded-full flex items-center justify-center
+                               border border-white/10 text-white/40
                                hover:text-[#00E5FF] hover:border-[#00E5FF]/40
                                transition-all"
                     whileHover={{ scale: 1.15 }}
