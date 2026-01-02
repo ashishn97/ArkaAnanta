@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center mb-6">
               <div className="h-14 w-14 mr-3 bg-white rounded-xl p-1 overflow-hidden shadow-lg shadow-white/5">
                 <img
-                  src="Assets/logo.jpg"
+                  src="/assets/logo.jpg"
                   alt="Arka Ananta Logo"
                   className="h-full w-full object-contain"
                 />

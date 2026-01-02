@@ -74,18 +74,18 @@ export const TEAM = [
     name: "Surendra Kumar Pareek",
     role: "Co-Founder & Director",
     linkedin: "https://www.linkedin.com/in/surendra-kumar-pareek/",
-    image: "Assets/surendra.jpg"
+    image: "/assets/surendra.jpg"
   },
   {
     name: "Kushank Pareek",
     role: "Founder & CEO",
     linkedin: "https://www.linkedin.com/in/kushank-pareek-792b571a4/",
-    image: "Assets/kushank.jpg"
+    image: "/assets/kushank.jpg"
   },
   {
     name: "Abhimanyu Pareek",
     role: "CFO",
     linkedin: "https://www.linkedin.com/in/abhimanyu-pareek-a27489b8/",
-    image: "Assets/abhimanyu.jpg"
+    image: "/assets/abhimanyu.jpg"
   }
 ];
